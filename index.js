@@ -115,6 +115,7 @@ async function run() {
 
 
 
+        
         app.put('/update/:id', async (req, res) => {
             const id = req.params.id;
             const user = req.body;
@@ -149,7 +150,7 @@ async function run() {
             res.send(result);
         })
 
-        
+
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
