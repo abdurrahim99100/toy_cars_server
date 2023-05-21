@@ -96,6 +96,7 @@ async function run() {
 
 
 
+        
         // post data;
         app.post('/add-toy', async (req, res) => {
             const addToy = req.body;
@@ -115,7 +116,7 @@ async function run() {
 
 
 
-        
+
         app.put('/update/:id', async (req, res) => {
             const id = req.params.id;
             const user = req.body;
